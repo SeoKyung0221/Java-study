@@ -1,87 +1,87 @@
-public class Exercise3 { // 3-1¹ø ¹®Á¦
+public class Exercise3 { // 3-1ë²ˆ ë¬¸ì œ
 	public static void main(String [] args) {
 		int x = 2;
 		int y = 5;
-		char c = 'A'; // AÀÇ À¯´ÏÄÚµå´Â 65
+		char c = 'A'; // Aì˜ ìœ ë‹ˆì½”ë“œëŠ” 65
 		
 		System.out.println(1+x<<33); // 6
 		System.out.println(y>=5 || x<0 && x>2); // true
-		System.out.println(y+=10-x++); // 13, x°ªÀº ÈÄÀ§ÇüÀÌ±â ¶§¹®¿¡ -°¡ ¸ÕÀú ¿¬»êµÈ´Ù.
+		System.out.println(y+=10-x++); // 13, xê°’ì€ í›„ìœ„í˜•ì´ê¸° ë•Œë¬¸ì— -ê°€ ë¨¼ì € ì—°ì‚°ëœë‹¤.
 		System.out.println(x+=2); // 5
 		System.out.println(!('A'<=c && c<='Z')); // false
 		System.out.println('C'-c); // 2
 		System.out.println('5'-'0'); // 5
 		System.out.println(c+1); // 66
-		System.out.println(++c); // B ´ÜÇ×¿¬»êÀÚ´Â Çüº¯È¯ ÇÏÁö ¾Ê´Â´Ù.
+		System.out.println(++c); // B ë‹¨í•­ì—°ì‚°ìëŠ” í˜•ë³€í™˜ í•˜ì§€ ì•ŠëŠ”ë‹¤.
 		System.out.println(c++); // B
 		System.out.println(c); // C
 	}
 }
 
-class Exercise3_2 { // 3-2¹ø ¹®Á¦
+class Exercise3_2 { // 3-2ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
-		int numOfApples = 123; // »ç°úÀÇ °³¼ö
-		int sizeOfBucket = 10; // ¹Ù±¸´ÏÀÇ Å©±â (¹Ù±¸´Ï¿¡ ÇÑ¹ø¿¡ ´ã±â´Â »ç°úÀÇ ¾ç)
-		int numOfBucket = 13; // ¸ğµç »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö
+		int numOfApples = 123; // ì‚¬ê³¼ì˜ ê°œìˆ˜
+		int sizeOfBucket = 10; // ë°”êµ¬ë‹ˆì˜ í¬ê¸° (ë°”êµ¬ë‹ˆì— í•œë²ˆì— ë‹´ê¸°ëŠ” ì‚¬ê³¼ì˜ ì–‘)
+		int numOfBucket = 13; // ëª¨ë“  ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜
 		
-		 System.out.println("ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö : "+numOfBucket);
+		 System.out.println("í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜ : "+numOfBucket);
 	}
 }
 
-class Exercise3_3{ // 3-3¹ø ¹®Á¦
+class Exercise3_3{ // 3-3ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int num = 10;
-		System.out.println((num>0) ? "¾ç¼ö" : ((num==0) ? "0" : "À½¼ö"));
+		System.out.println((num>0) ? "ì–‘ìˆ˜" : ((num==0) ? "0" : "ìŒìˆ˜"));
 	}
 }
 
-class Exercise3_4{ // 3-4¹ø ¹®Á¦
+class Exercise3_4{ // 3-4ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int num = 456;
-		System.out.println(num/100*100); // ¼Ò¼öÁ¡ ÀÌÇÏ ³¯·Á¹ö¸®°í ´Ù½Ã °ö 100!
+		System.out.println(num/100*100); // ì†Œìˆ˜ì  ì´í•˜ ë‚ ë ¤ë²„ë¦¬ê³  ë‹¤ì‹œ ê³± 100!
 	}
 }
 
-class Exercise3_5{ // 3-5¹ø ¹®Á¦
+class Exercise3_5{ // 3-5ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int num = 333;
 		System.out.println(num/10*10+1);
 	}
 }
 
-class Exercise3_6{ // 3-6¹ø ¹®Á¦
+class Exercise3_6{ // 3-6ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int num = 24;
 		System.out.println(10-num%10);
 	}
 }
 
-class Exercise3_7{ // 3-7¹ø ¹®Á¦
+class Exercise3_7{ // 3-7ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int fahrenheit = 100;
 		float celcius = (int)((5/9f * (fahrenheit-32))*100+0.5) / 100f;
 				
 		System.out.println("Fahrenheit:"+fahrenheit);
 		System.out.println("Celcius:"+celcius);
-	} // °ª¿¡ ÀÏ´Ü 100À» °öÇÏ°í 0.5¸¦ ´õÇØ¼­ intÅ¸ÀÔÀ¸·Î ¹İÈ¯ÇÏ¸é ¿øÇÏ´Â ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²ÇÑ ÇüÅÂ°¡ µÈ´Ù.
-}	// ÀÌ¸¦ ´Ù½Ã 100fÀÇ floatÇüÀ¸·Î ³ª´©¾î¼­ ¿øÇÏ´Â °ªÀÇ ÃÖÁ¾ÇüÀ» ±¸ÇÏ¸é µÈ´Ù.
+	} // ê°’ì— ì¼ë‹¨ 100ì„ ê³±í•˜ê³  0.5ë¥¼ ë”í•´ì„œ intíƒ€ì…ìœ¼ë¡œ ë°˜í™˜í•˜ë©´ ì›í•˜ëŠ” ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼í•œ í˜•íƒœê°€ ëœë‹¤.
+}	// ì´ë¥¼ ë‹¤ì‹œ 100fì˜ floatí˜•ìœ¼ë¡œ ë‚˜ëˆ„ì–´ì„œ ì›í•˜ëŠ” ê°’ì˜ ìµœì¢…í˜•ì„ êµ¬í•˜ë©´ ëœë‹¤.
 
-class Exercise3_8{ // 3-8¹ø ¹®Á¦
+class Exercise3_8{ // 3-8ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		byte a=10;
 		byte b=20;
-		byte c=(byte)(a+b); //byte c=a+b;¸¦ ¼öÁ¤
+		byte c=(byte)(a+b); //byte c=a+b;ë¥¼ ìˆ˜ì •
 		
 		char ch='A';
-		ch = (char)(ch+2); // ch = ch + 2;¸¦ ¼öÁ¤
+		ch = (char)(ch+2); // ch = ch + 2;ë¥¼ ìˆ˜ì •
 		
-		float f = 3/2f; // f Ãß°¡
-		long l = 3000 * 3000 * 3000l; // lÃß°¡
+		float f = 3/2f; // f ì¶”ê°€
+		long l = 3000 * 3000 * 3000l; // lì¶”ê°€
 		
 		float f2 = 0.1f;
 		double d = 0.1;
 		
-		boolean result = (float)d==f2; // ºñ±³¿¬»êÀÚ true or false ¹İÈ¯ f2¿Í dÀÇ Å¸ÀÔÀÌ ´Ş¶ó º¯È¯.
+		boolean result = (float)d==f2; // ë¹„êµì—°ì‚°ì true or false ë°˜í™˜ f2ì™€ dì˜ íƒ€ì…ì´ ë‹¬ë¼ ë³€í™˜.
 		
 		System.out.println("c="+c);
 		System.out.println(("ch="+ch));
@@ -91,7 +91,7 @@ class Exercise3_8{ // 3-8¹ø ¹®Á¦
 	}
 }
 
-class Exercise3_9{ // 3-9¹ø ¹®Á¦
+class Exercise3_9{ // 3-9ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		char ch = 'z';
 		boolean b = ('a'<=ch && ch <='z') || ('A'<=ch && ch <='Z') ||
@@ -101,7 +101,7 @@ class Exercise3_9{ // 3-9¹ø ¹®Á¦
 	}
 }
 
-class Exercise3_10{ // 3-10¹ø ¹®Á¦
+class Exercise3_10{ // 3-10ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		char ch = 'A';
 		
