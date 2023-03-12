@@ -2,21 +2,21 @@ import java.util.Scanner;
 
 public class Exercise5 {
 	public static void main(String[] args) {
-		// Á¤´ä : d, e
-		// int[] arr = new int[5]{1,2,3,4,5} <-µÎ¹øÂ° ´ë°ıÈ£¿¡´Â ¼ıÀÚ°¡ µé¾î°¡¸é ¾ÈµÈ´Ù.
-		// °ıÈ£¾ÈÀ» ºñ¿öµÎ°í ÃÊ±âÈ­ ½ÃÄÑ¼­ ±× Å©±â¸¦ °áÁ¤ÇÏ´Â °ÍÀÌ±â ¶§¹®¿¡ ºñ¿ì±â!
-		// int arr[5] <- ¸¶Âù°¡Áö·Î ´ë°ıÈ£¿¡ ¼ıÀÚ°¡ µé¾î°¡¸é ¾ÈµÈ´Ù. ¹è¿­À» ¼±¾ğÇÏ´Â ºÎºĞ
+		// ì •ë‹µ : d, e
+		// int[] arr = new int[5]{1,2,3,4,5} <-ë‘ë²ˆì§¸ ëŒ€ê´„í˜¸ì—ëŠ” ìˆ«ìê°€ ë“¤ì–´ê°€ë©´ ì•ˆëœë‹¤.
+		// ê´„í˜¸ì•ˆì„ ë¹„ì›Œë‘ê³  ì´ˆê¸°í™” ì‹œì¼œì„œ ê·¸ í¬ê¸°ë¥¼ ê²°ì •í•˜ëŠ” ê²ƒì´ê¸° ë•Œë¬¸ì— ë¹„ìš°ê¸°!
+		// int arr[5] <- ë§ˆì°¬ê°€ì§€ë¡œ ëŒ€ê´„í˜¸ì— ìˆ«ìê°€ ë“¤ì–´ê°€ë©´ ì•ˆëœë‹¤. ë°°ì—´ì„ ì„ ì–¸í•˜ëŠ” ë¶€ë¶„
 	}
 }
 
-class Exercise5_2 { // 2¹ø ¹®Á¦
+class Exercise5_2 { // 2ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
-		// arr[3].length´Â 2Â÷¿ø¹è¿­ÀÇ 4ÇàÀÇ ¿­ÀÇ °³¼ö¸¦ ÀÇ¹ÌÇÑ´Ù. Áï, 2ÀÌ´Ù.
-		// ¿©±â¼­ ÁÖÀÇ [3]ÀÌ¶ó°í 3ÇàÀ¸·Î Âø°¢ÇØ¼± ¾ÈµÈ´Ù. ¹è¿­Àº [0]ºÎÅÍ ½ÃÀÛÇÔÀ» ²À ¸í½ÉÇÏÀÚ.
+		// arr[3].lengthëŠ” 2ì°¨ì›ë°°ì—´ì˜ 4í–‰ì˜ ì—´ì˜ ê°œìˆ˜ë¥¼ ì˜ë¯¸í•œë‹¤. ì¦‰, 2ì´ë‹¤.
+		// ì—¬ê¸°ì„œ ì£¼ì˜ [3]ì´ë¼ê³  3í–‰ìœ¼ë¡œ ì°©ê°í•´ì„  ì•ˆëœë‹¤. ë°°ì—´ì€ [0]ë¶€í„° ì‹œì‘í•¨ì„ ê¼­ ëª…ì‹¬í•˜ì.
 	}
 }
 
-class Exercise5_3 { // 3¹ø ¹®Á¦
+class Exercise5_3 { // 3ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int[] arr = {10, 20, 30, 40, 50};
 		int sum = 0;
@@ -28,7 +28,7 @@ class Exercise5_3 { // 3¹ø ¹®Á¦
 	}
 }
 
-class Exercise5_4 { //4¹ø ¹®Á¦
+class Exercise5_4 { //4ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int[][] arr = {
 				{5, 5, 5, 5, 5},
@@ -37,7 +37,7 @@ class Exercise5_4 { //4¹ø ¹®Á¦
 				{30, 30, 30, 30, 30}
 		};
 		int total = 0;
-		float average = 0; // 0.0f·Î ÇØ¾ßÇÏÁö ¾Ê³ª?
+		float average = 0; // 0.0fë¡œ í•´ì•¼í•˜ì§€ ì•Šë‚˜?
 		
 		float count = 0;
 		for(int i=0; i<arr.length; i++) {
@@ -52,12 +52,12 @@ class Exercise5_4 { //4¹ø ¹®Á¦
 	}
 }
 
-class Exercise5_5 { // 5¹ø ¹®Á¦
+class Exercise5_5 { // 5ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int[] ballArr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		int[] ball3 = new int[3];
 		
-		// ¹è¿­ ballArrÀÇ ÀÓÀÇÀÇ ¿ä¼Ò¸¦ °ñ¶ó¼­ À§Ä¡¸¦ ¹Ù²Û´Ù.
+		// ë°°ì—´ ballArrì˜ ì„ì˜ì˜ ìš”ì†Œë¥¼ ê³¨ë¼ì„œ ìœ„ì¹˜ë¥¼ ë°”ê¾¼ë‹¤.
 		for(int i=0; i<ballArr.length; i++) {
 			int j = (int)(Math.random()*ballArr.length);
 			int tmp = 0;
@@ -65,9 +65,9 @@ class Exercise5_5 { // 5¹ø ¹®Á¦
 			ballArr[i] = ballArr[j];
 			ballArr[j] = tmp;
 		}
-		// ¹è¿­ ballArrÀÇ ¾Õ¿¡¼­ 3°³ÀÇ ¼ö¸¦ ¹è¿­ ball3·Î º¹»çÇÑ´Ù.
-		for(int i=0; i<ball3.length; i++) { // ÀÌ°Íµµ Æ²¸° °ÍÀº ¾Æ´Ï´Ù ÇÏÁö¸¸! 
-			ball3[i] = ballArr[i]; // System.arraycopy(ballArr, 0, ball3, 0, 3)À» ÀØÁö¸»ÀÚ!
+		// ë°°ì—´ ballArrì˜ ì•ì—ì„œ 3ê°œì˜ ìˆ˜ë¥¼ ë°°ì—´ ball3ë¡œ ë³µì‚¬í•œë‹¤.
+		for(int i=0; i<ball3.length; i++) { // ì´ê²ƒë„ í‹€ë¦° ê²ƒì€ ì•„ë‹ˆë‹¤ í•˜ì§€ë§Œ! 
+			ball3[i] = ballArr[i]; // System.arraycopy(ballArr, 0, ball3, 0, 3)ì„ ìŠì§€ë§ì!
 		}
 		for(int i=0; i<ball3.length; i++) {
 			System.out.print(ball3[i]);
@@ -75,80 +75,80 @@ class Exercise5_5 { // 5¹ø ¹®Á¦
 	}
 }
 
-class Exercise5_6 { // 6¹ø ¹®Á¦
+class Exercise5_6 { // 6ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
-		// Å« ±İ¾×ÀÇ µ¿ÀüÀ» ¿ì¼±ÀûÀ¸·Î °Å½½·¯ Áà¾ßÇÑ´Ù.
+		// í° ê¸ˆì•¡ì˜ ë™ì „ì„ ìš°ì„ ì ìœ¼ë¡œ ê±°ìŠ¬ëŸ¬ ì¤˜ì•¼í•œë‹¤.
 		int[] coinUnit = {500, 100, 50, 10};
 		
 		int money = 2680;
 		System.out.println("money="+money);
 		
 		for(int i=0; i<coinUnit.length; i++) {
-			System.out.println(coinUnit[i]+"¿ø: "+money/coinUnit[i]);
+			System.out.println(coinUnit[i]+"ì›: "+money/coinUnit[i]);
 			money %= coinUnit[i];
 		}
 	}
 }
-// import java.util.*; // <- 7¹ø ¹®Á¦´Â Ã¥ÀÇ ¿¹Á¦µéÀ» Ç®¸é¼­µµ ¹®Á¦°¡ µÆÁö¸¸ Ä¿¸Çµå ¶óÀÎÀ» ÅëÇØ ÀÔ·ÂÀÌ ¾ÈµÈ´Ù.
-// ±×·¡¼­ ÀÓ½Ã·Î Scanner Å¬·¡½º¸¦ ÀÌ¿ëÇØ¼­ ÀÔ·ÂÇÏ·Á°í ÇÑ´Ù.
-class Exercise5_7 { // 7¹ø ¹®Á¦
+// import java.util.*; // <- 7ë²ˆ ë¬¸ì œëŠ” ì±…ì˜ ì˜ˆì œë“¤ì„ í’€ë©´ì„œë„ ë¬¸ì œê°€ ëì§€ë§Œ ì»¤ë§¨ë“œ ë¼ì¸ì„ í†µí•´ ì…ë ¥ì´ ì•ˆëœë‹¤.
+// ê·¸ë˜ì„œ ì„ì‹œë¡œ Scanner í´ë˜ìŠ¤ë¥¼ ì´ìš©í•´ì„œ ì…ë ¥í•˜ë ¤ê³  í•œë‹¤.
+class Exercise5_7 { // 7ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		String regNo = scanner.nextLine(); // È­¸éÀ» ÅëÇØ ÀÔ·Â¹Ş±â
-		int money = Integer.parseInt(regNo); // ÀÔ·Â¹ŞÀº °ªÀ» ¼ıÀÚ·Î º¯È¯ÇØ money¿¡ ÀúÀå.
+		String regNo = scanner.nextLine(); // í™”ë©´ì„ í†µí•´ ì…ë ¥ë°›ê¸°
+		int money = Integer.parseInt(regNo); // ì…ë ¥ë°›ì€ ê°’ì„ ìˆ«ìë¡œ ë³€í™˜í•´ moneyì— ì €ì¥.
 		
 		System.out.println("money="+money);
 		
-		int[] coinUnit = {500, 100, 50, 10}; // µ¿ÀüÀÇ ´ÜÀ§
-		int[] coin = {5, 5, 5, 5}; // ´ÜÀ§º° µ¿ÀüÀÇ °³¼ö
+		int[] coinUnit = {500, 100, 50, 10}; // ë™ì „ì˜ ë‹¨ìœ„
+		int[] coin = {5, 5, 5, 5}; // ë‹¨ìœ„ë³„ ë™ì „ì˜ ê°œìˆ˜
 		
 		for(int i=0; i<coinUnit.length; i++) {
 			int coinNum = 0;
 			
-			coinNum = money / coinUnit[i]; // µ¿ÀüÀÇ °³¼ö
-			if(coinNum > coin[i]) { // ¹è¿­ coin¿¡¼­ coinNum¸¸Å­ÀÇ µ¿Àü»©±â.
+			coinNum = money / coinUnit[i]; // ë™ì „ì˜ ê°œìˆ˜
+			if(coinNum > coin[i]) { // ë°°ì—´ coinì—ì„œ coinNumë§Œí¼ì˜ ë™ì „ë¹¼ê¸°.
 				coin[i] = 0;
-				coinNum = 5; // coinÀ» ³Ñ¾î¼± °³¼ö°¡ ÇÊ¿äÇÏ¸é ÃÖ´ë ÄÚÀÎ 5°³·Î coinNumÀ» °íÁ¤.
+				coinNum = 5; // coinì„ ë„˜ì–´ì„  ê°œìˆ˜ê°€ í•„ìš”í•˜ë©´ ìµœëŒ€ ì½”ì¸ 5ê°œë¡œ coinNumì„ ê³ ì •.
 			} else
 				coin[i] -= coinNum;
 			
-			money = money - (coinNum * coinUnit[i]); // money¿¡¼­ °Å½½·¯ ÁØ µ¿Àü¸¸Å­ »©±â
+			money = money - (coinNum * coinUnit[i]); // moneyì—ì„œ ê±°ìŠ¬ëŸ¬ ì¤€ ë™ì „ë§Œí¼ ë¹¼ê¸°
 			
-			System.out.println(coinUnit[i]+"¿ø: "+coinNum);
+			System.out.println(coinUnit[i]+"ì›: "+coinNum);
 		}
 		
 		if(money > 0) {
-			System.out.println("°Å½º¸§µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-			System.exit(0); // ÇÁ·Î±×·¥ Á¾·á.
+			System.out.println("ê±°ìŠ¤ë¦„ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+			System.exit(0); // í”„ë¡œê·¸ë¨ ì¢…ë£Œ.
 		}
-		System.out.println("=³²Àº µ¿ÀüÀÇ °³¼ö =");
+		System.out.println("=ë‚¨ì€ ë™ì „ì˜ ê°œìˆ˜ =");
 		
 		for(int i=0; i<coinUnit.length; i++) {
-			System.out.println(coinUnit[i]+"¿ø:"+coin[i]);
+			System.out.println(coinUnit[i]+"ì›:"+coin[i]);
 		}
 	}
 }
 
-class Exercise5_8 { // 8¹ø ¹®Á¦
+class Exercise5_8 { // 8ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int[] answer = {1, 4, 4, 3, 1, 4, 4, 2, 1, 3, 2};
 		int[] counter = new int[4];
 		
 		for(int i=0; i<answer.length; i++) {
-			counter[answer[i]-1]++; // °¢ ¼ıÀÚÀÇ °³¼ö¼¼±â. -1À» ÇÏ´Â ÀÌÀ¯´Â [0]ºÎÅÍ ¹è¿­ÀÌ ½ÃÀÛÇÏ´Ï±î
+			counter[answer[i]-1]++; // ê° ìˆ«ìì˜ ê°œìˆ˜ì„¸ê¸°. -1ì„ í•˜ëŠ” ì´ìœ ëŠ” [0]ë¶€í„° ë°°ì—´ì´ ì‹œì‘í•˜ë‹ˆê¹Œ
 		}
 		for(int i=0; i<counter.length; i++) {
 			System.out.print(counter[i]);
 			for(int j=0; j<counter[i]; j++) {
-				System.out.print("*"); // *¸¦ 1~4ÀÇ ¼ıÀÚÀÇ °³¼ö¸¸Å­ Âï±â.
+				System.out.print("*"); // *ë¥¼ 1~4ì˜ ìˆ«ìì˜ ê°œìˆ˜ë§Œí¼ ì°ê¸°.
 			}
 			System.out.println();
 		}
 	}
 }
 
-class Exercise5_9{ // 9¹ø ¹®Á¦
+class Exercise5_9{ // 9ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		char[][] star = {
 				{'*', '*', ' ', ' ', ' '},
@@ -173,7 +173,7 @@ class Exercise5_9{ // 9¹ø ¹®Á¦
 				int x = j;
 				int y = star.length-1-i;
 				
-				result[x][y] = star[i][j]; // È¸Àü½ÃÅ³ ¶§ÀÇ ±ÔÄ¢À» ÀÌ¿ëÇØ x, y¸¦ Á¤¸³ÇÏ°í ´ëÀÔ.
+				result[x][y] = star[i][j]; // íšŒì „ì‹œí‚¬ ë•Œì˜ ê·œì¹™ì„ ì´ìš©í•´ x, yë¥¼ ì •ë¦½í•˜ê³  ëŒ€ì….
 			}
 		}
 		for(int i=0; i<result.length; i++) {
@@ -185,7 +185,7 @@ class Exercise5_9{ // 9¹ø ¹®Á¦
 	}
 }
 
-class Exercise5_10 { // 10¹ø ¹®Á¦
+class Exercise5_10 { // 10ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		char[] abcCode = { '`','~','!','@','#','$','%','^','&','*',
 				'(',')','-','_','+','=','|','[',']','{',
@@ -196,7 +196,7 @@ class Exercise5_10 { // 10¹ø ¹®Á¦
 		String src = "abc123";
 		String result = "";
 		
-		// ¹®ÀÚ¿­ srcÀÇ ¹®ÀÚ¸¦ charAt()À¸·Î ÇÏ³ª¾¿ ÀĞ¾î¼­ º¯È¯ ÈÄ result¿¡ ÀúÀå
+		// ë¬¸ìì—´ srcì˜ ë¬¸ìë¥¼ charAt()ìœ¼ë¡œ í•˜ë‚˜ì”© ì½ì–´ì„œ ë³€í™˜ í›„ resultì— ì €ì¥
 		for(int i=0; i<src.length(); i++) {
 			char ch = src.charAt(i);
 			
@@ -211,7 +211,7 @@ class Exercise5_10 { // 10¹ø ¹®Á¦
 	}
 }
 
-class Exercise5_11{ // 11¹ø ¹®Á¦
+class Exercise5_11{ // 11ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		int[][] score = {
 				{100, 100, 100},
@@ -226,9 +226,9 @@ class Exercise5_11{ // 11¹ø ¹®Á¦
 		for(int i=0; i<score.length; i++) {
 			for(int j=0; j<score[i].length; j++) {
 				result[i][j] = score[i][j];
-				result[i][score[0].length] += score[i][j]; // ÇàÀÇ ÇÕ
-				result[score.length][j] += score[i][j]; // ¿­ÀÇ ÇÕ
-				result[score.length][score[0].length] += score[i][j]; // ´ë°¢¼±ÀÇ ÇÕ
+				result[i][score[0].length] += score[i][j]; // í–‰ì˜ í•©
+				result[score.length][j] += score[i][j]; // ì—´ì˜ í•©
+				result[score.length][score[0].length] += score[i][j]; // ëŒ€ê°ì„ ì˜ í•©
 			}
 		}
 		for(int i=0; i<result.length; i++) {
@@ -240,60 +240,60 @@ class Exercise5_11{ // 11¹ø ¹®Á¦
 	}
 }
 // import java.util.*;
-class Exercise5_12 { // 12¹ø ¹®Á¦
+class Exercise5_12 { // 12ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		String[][] words = {
-				{"chair", "ÀÇÀÚ"}, // words[0][0], words[0][1]
-				{"computer", "ÄÄÇ»ÅÍ"}, // words[1][0], words[1][1]
-				{"integer", "Á¤¼ö"} // words[2][0], word[2][1]
+				{"chair", "ì˜ì"}, // words[0][0], words[0][1]
+				{"computer", "ì»´í“¨í„°"}, // words[1][0], words[1][1]
+				{"integer", "ì •ìˆ˜"} // words[2][0], word[2][1]
 		};
 		
 		Scanner scanner = new Scanner(System.in);
-		int counter = 0; // MultiArrEx4ÀÇ º¯Çü! Á¤´ä È½¼öÀÇ counter
+		int counter = 0; // MultiArrEx4ì˜ ë³€í˜•! ì •ë‹µ íšŸìˆ˜ì˜ counter
 		
 		for(int i=0; i<words.length; i++) {
-			System.out.printf("Q%d. %sÀÇ ¶æÀº", i+1, words[i][0]);
+			System.out.printf("Q%d. %sì˜ ëœ»ì€", i+1, words[i][0]);
 			
 			String tmp = scanner.nextLine();
 			
 			if(tmp.equals(words[i][1])) {
-				System.out.printf("Á¤´äÀÔ´Ï´Ù. %n%n");
+				System.out.printf("ì •ë‹µì…ë‹ˆë‹¤. %n%n");
 				counter++;
 			} else {
-				System.out.printf("Æ²·È½À´Ï´Ù. Á¤´äÀº %sÀÔ´Ï´Ù. %n%n", words[i][1]);
+				System.out.printf("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ %sì…ë‹ˆë‹¤. %n%n", words[i][1]);
 			}
-		} // for¹®ÀÇ ³¡
-		System.out.println("ÀüÃ¼ 3¹®Á¦ Áß "+counter+"¹®Á¦ ¸ÂÃß¼Ì½À´Ï´Ù."); // counter¸¦ ÅëÇØ Á¤´ä °³¼ö Ãâ·Â
-	} // mainÀÇ ³¡
+		} // forë¬¸ì˜ ë
+		System.out.println("ì „ì²´ 3ë¬¸ì œ ì¤‘ "+counter+"ë¬¸ì œ ë§ì¶”ì…¨ìŠµë‹ˆë‹¤."); // counterë¥¼ í†µí•´ ì •ë‹µ ê°œìˆ˜ ì¶œë ¥
+	} // mainì˜ ë
 }
 //import java.util.Scanner;
-class Exercise5_13 { // 13¹ø ¹®Á¦
+class Exercise5_13 { // 13ë²ˆ ë¬¸ì œ
 	public static void main(String[] args) {
 		String[] words = {"television", "computer", "mouse", "phone"};
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		for(int i=0; i<words.length; i++) {
-			char[] question = words[i].toCharArray(); // StringÀ» char[]·Î º¯È¯
+			char[] question = words[i].toCharArray(); // Stringì„ char[]ë¡œ ë³€í™˜
 			
 			for(int j=0; j<question.length; j++) {
 				char ch = ' ';
 				int h = (int)Math.random()*question.length;
 				ch = question[j];
 				question[j] = question[h];
-				question[h] = ch; // char¹è¿­ question ¿¡ ´ã±ä ¹®ÀÚÀÇ À§Ä¡¸¦ ÀÓÀÇ·Î ·£´ı ±³Ã¼.
+				question[h] = ch; // charë°°ì—´ question ì— ë‹´ê¸´ ë¬¸ìì˜ ìœ„ì¹˜ë¥¼ ì„ì˜ë¡œ ëœë¤ êµì²´.
 			}
 			
-			System.out.printf("Q%d. %sÀÇ Á¤´äÀ» ÀÔ·ÂÇÏ¼¼¿ä,>", i+1, new String(question));
+			System.out.printf("Q%d. %sì˜ ì •ë‹µì„ ì…ë ¥í•˜ì„¸ìš”,>", i+1, new String(question));
 			String answer = scanner.nextLine();
 			
-			// trim()À¸·Î answerÀÇ ÁÂ¿ì °ø¹éÀ» Á¦°ÅÇÑ ÈÄ, equals·Î word[i]¿Í ºñ±³
+			// trim()ìœ¼ë¡œ answerì˜ ì¢Œìš° ê³µë°±ì„ ì œê±°í•œ í›„, equalsë¡œ word[i]ì™€ ë¹„êµ
 			if(words[i].equals(answer.trim()))
-					System.out.printf("¸Â¾Ò½À´Ï´Ù.%n%n");
+					System.out.printf("ë§ì•˜ìŠµë‹ˆë‹¤.%n%n");
 			else
-				System.out.printf("Æ²·È½À´Ï´Ù.%n%n");
+				System.out.printf("í‹€ë ¸ìŠµë‹ˆë‹¤.%n%n");
 		}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 }
 
 
