@@ -14,7 +14,7 @@ class Exercise4_2{ // 4-2
 		int sum = 0;
 		for(int i=1; i<=20; i++) {
 			if(!((i%2==0)||(i%3==0))) {
-				sum += i; // 1~20±îÁöÀÇ Á¤¼ö Áß¿¡¼­ 2 ¶Ç´Â 3ÀÇ ¹è¼ö°¡ ¾Æ´Ñ ¼öÀÇ ÃÑÇÕÀ» ±¸ÇÏ´Â ÄÚµå
+				sum += i; // 1~20ê¹Œì§€ì˜ ì •ìˆ˜ ì¤‘ì—ì„œ 2 ë˜ëŠ” 3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹Œ ìˆ˜ì˜ ì´í•©ì„ êµ¬í•˜ëŠ” ì½”ë“œ
 			}
 		}
 	}
@@ -25,7 +25,7 @@ class Exercise4_3{ // 4-3
 		int sum = 0;
 		for(int i=1; i<=10; i++) {
 			for(int j=1; j<=i; j++) {
-				sum += j; // (1)+(1+2)+(1+2+3)...+(1+...+10)ÀÇ °á°ú °è»ê ÄÚµå
+				sum += j; // (1)+(1+2)+(1+2+3)...+(1+...+10)ì˜ ê²°ê³¼ ê³„ì‚° ì½”ë“œ
 			}
 		}
 	}
@@ -37,7 +37,7 @@ class Exercise4_4{ // 4-4
 		int s =1;
 		int num = 0;
 		
-		for(int i=1; true; i++, s=-s) { // for¹® ¾È¿¡ Á¶°Ç¹® ¼¼°³´Â ¿©·¯°³·Î ³ª¿Ã ¼öµµ ÀÖ´Ù! ¸í½É!
+		for(int i=1; true; i++, s=-s) { // forë¬¸ ì•ˆì— ì¡°ê±´ë¬¸ ì„¸ê°œëŠ” ì—¬ëŸ¬ê°œë¡œ ë‚˜ì˜¬ ìˆ˜ë„ ìˆë‹¤! ëª…ì‹¬!
 			num = s *i;
 			sum += num;
 			
@@ -45,7 +45,7 @@ class Exercise4_4{ // 4-4
 				break;
 		}
 		System.out.println("num="+num);
-		System.out.println("sum="+sum); // sumÀ¸·Î¸¸ Ç® ¼ö´Â ÀÖÁö¸¸ ¾î¶² ¼ö num¿¡¼­ sum>100ÀÎÁö ¾Ë¾Æ³»¾ßÇÔ.
+		System.out.println("sum="+sum); // sumìœ¼ë¡œë§Œ í’€ ìˆ˜ëŠ” ìˆì§€ë§Œ ì–´ë–¤ ìˆ˜ numì—ì„œ sum>100ì¸ì§€ ì•Œì•„ë‚´ì•¼í•¨.
 	}
 }
 
@@ -53,7 +53,7 @@ class Exercise4_5{ // 4-5
 	public static void main(String[] args) {
 		int i = 0;
 		
-		while(i<=10) { // while·Î for¹®À» ´ë½ÅÇØ¼­ Ç¥Çö
+		while(i<=10) { // whileë¡œ forë¬¸ì„ ëŒ€ì‹ í•´ì„œ í‘œí˜„
 			int j = 0;
 			
 			while(j<=i) {
@@ -103,8 +103,8 @@ class Exercise4_9{ // 4-9
 		int sum = 0;
 
 		for(int i=0; i<str.length(); i++) {
-			sum += str.charAt(i)-'0'; // charAt(int i)¸¦ ÇÏ¸é °¢ ÀÚ¸®ÀÇ ¹®ÀÚ¿­ÀÌ Ãâ·ÂµÈ´Ù. ¼ıÀÚ°¡
-		}							  // ¾Æ´Ï¶ó¼­ ¾Æ½ºÅ°ÄÚµå¿¡ ÇØ´çÇÏ´Â ¸¸Å­ '0'À» »©ÁÖ¾î¾ß ±× °ªÀÌ ¼ıÀÚ·Î º¯È¯µÈ´Ù.
+			sum += str.charAt(i)-'0'; // charAt(int i)ë¥¼ í•˜ë©´ ê° ìë¦¬ì˜ ë¬¸ìì—´ì´ ì¶œë ¥ëœë‹¤. ìˆ«ìê°€
+		}							  // ì•„ë‹ˆë¼ì„œ ì•„ìŠ¤í‚¤ì½”ë“œì— í•´ë‹¹í•˜ëŠ” ë§Œí¼ '0'ì„ ë¹¼ì£¼ì–´ì•¼ ê·¸ ê°’ì´ ìˆ«ìë¡œ ë³€í™˜ëœë‹¤.
 		System.out.println("sum="+sum);
 	}
 }
@@ -115,8 +115,8 @@ class Exercise4_10{ // 4-10
 		int sum = 0;
 		
 		for(int i=1; i<=5; i++) {
-			sum += num %10; // ÀÏ´Ü ¸Ç µŞÀÚ¸®ºÎÅÍ ³ª¸ÓÁö·Î ÇÏ³ª¾¿ ±¸ÇÏ°í
-			num /= 10; // intÀÇ °è»êÀÌ¹Ç·Î ½Ç¼öÇüÀÇ °è»ê Áï, ¼Ò¼öÁ¡Àº ¹ö¸®¸é¼­ ¿Â´Ù.
+			sum += num %10; // ì¼ë‹¨ ë§¨ ë’·ìë¦¬ë¶€í„° ë‚˜ë¨¸ì§€ë¡œ í•˜ë‚˜ì”© êµ¬í•˜ê³ 
+			num /= 10; // intì˜ ê³„ì‚°ì´ë¯€ë¡œ ì‹¤ìˆ˜í˜•ì˜ ê³„ì‚° ì¦‰, ì†Œìˆ˜ì ì€ ë²„ë¦¬ë©´ì„œ ì˜¨ë‹¤.
 		}
 		System.out.println("sum="+sum);
 	}
@@ -124,16 +124,16 @@ class Exercise4_10{ // 4-10
 
 class Exercise4_11{ // 4-11
 	public static void main(String[] args) {
-		// Fibonnaci ¼ö¿­ÀÇ ½ÃÀÛÀÇ Ã¹ µÎ ¼ıÀÚ¸¦ 1, 1·Î ÇÑ´Ù.
+		// Fibonnaci ìˆ˜ì—´ì˜ ì‹œì‘ì˜ ì²« ë‘ ìˆ«ìë¥¼ 1, 1ë¡œ í•œë‹¤.
 		int num1 = 1;
 		int num2 = 1;
-		int num3 = 0; // ¼¼¹øÂ° °ª
+		int num3 = 0; // ì„¸ë²ˆì§¸ ê°’
 		System.out.print(num1+","+num2);
 		
 		for(int i=0; i< 8; i++) {
 			num3 = num1+ num2;
-			System.out.print(","+num3); // ÇÇº¸³ªÄ¡ ÇÕ Ãâ·Â
-			num1 = num2; // ¼ö¿­ÀÇ ¼ø¼­ ¹Ù²Ù±â
+			System.out.print(","+num3); // í”¼ë³´ë‚˜ì¹˜ í•© ì¶œë ¥
+			num1 = num2; // ìˆ˜ì—´ì˜ ìˆœì„œ ë°”ê¾¸ê¸°
 			num2 = num3;
 		}
 	}
@@ -156,49 +156,49 @@ class Exercise4_13{ // 4-13
 		char ch = ' ';
 		boolean isNumber = true;
 		
-		// ¹İº¹¹®°ú charAt(int i)¸¦ ÀÌ¿ëÇØ¼­ ¹®ÀÚ¿­ÀÇ ¹®ÀÚ¸¦
-		// ÇÏ³ª¾¿ ÀĞ¾î¼­ °Ë»çÇÑ´Ù.
+		// ë°˜ë³µë¬¸ê³¼ charAt(int i)ë¥¼ ì´ìš©í•´ì„œ ë¬¸ìì—´ì˜ ë¬¸ìë¥¼
+		// í•˜ë‚˜ì”© ì½ì–´ì„œ ê²€ì‚¬í•œë‹¤.
 		for(int i=0; i< value.length(); i++) {
 			ch=value.charAt(i);
 			
-			if(!('0'<=ch && ch <= '9')) { // ¹®ÀÚ·Î Ãâ·ÂµÇ±â ¶§¹®¿¡ ¾Æ½ºÅ° ÄÚµå »çÀÌ¿¡¼­ 0~9»çÀÌÀÎÁö
-				isNumber = false;		  // Å×½ºÆ® ¸¸¾à ¾Æ´Ï¶ó¸é isNumber = false·Î ÀÌÈÄ break·Î ¹İº¹¹® Å»Ãâ
+			if(!('0'<=ch && ch <= '9')) { // ë¬¸ìë¡œ ì¶œë ¥ë˜ê¸° ë•Œë¬¸ì— ì•„ìŠ¤í‚¤ ì½”ë“œ ì‚¬ì´ì—ì„œ 0~9ì‚¬ì´ì¸ì§€
+				isNumber = false;		  // í…ŒìŠ¤íŠ¸ ë§Œì•½ ì•„ë‹ˆë¼ë©´ isNumber = falseë¡œ ì´í›„ breakë¡œ ë°˜ë³µë¬¸ íƒˆì¶œ
 				break;
 			}
 		}
 		
 		if(isNumber) {
-			System.out.println(value+"´Â ¼ıÀÚÀÔ´Ï´Ù.");
+			System.out.println(value+"ëŠ” ìˆ«ìì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(value+"´Â ¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println(value+"ëŠ” ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 	}
 }
 
 class Exercise4_14{ // 4-14
 	public static void main(String[] args) {
-		// 1~100»çÀÌÀÇ ÀÓÀÇÀÇ °ªÀ» ¾ò¾î¼­ answer¿¡ ÀúÀåÇÑ´Ù.
+		// 1~100ì‚¬ì´ì˜ ì„ì˜ì˜ ê°’ì„ ì–»ì–´ì„œ answerì— ì €ì¥í•œë‹¤.
 		int answer = (int)(Math.random()*100+1);
-		int input = 0; // »ç¿ëÀÚÀÔ·ÂÀ» ÀúÀåÇÒ °ø°£
-		int count = 0; // ½ÃµµÈ½¼ö¸¦ ¼¼±âÀ§ÇÑ º¯¼ö
+		int input = 0; // ì‚¬ìš©ìì…ë ¥ì„ ì €ì¥í•  ê³µê°„
+		int count = 0; // ì‹œë„íšŸìˆ˜ë¥¼ ì„¸ê¸°ìœ„í•œ ë³€ìˆ˜
 		
-		// È­¸éÀ¸·ÎºÎÅÍ »ç¿ëÀÚÀÔ·ÂÀ» ¹Ş±â À§ÇØ¼­ ScannerÅ¬·¡½º »ç¿ë
+		// í™”ë©´ìœ¼ë¡œë¶€í„° ì‚¬ìš©ìì…ë ¥ì„ ë°›ê¸° ìœ„í•´ì„œ Scannerí´ë˜ìŠ¤ ì‚¬ìš©
 		java.util.Scanner s = new java.util.Scanner(System.in);
 		
 		do {
 			count++;
-			System.out.print("1°ú 100»çÀÌÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
-			input = s.nextInt(); // ÀÔ·Â¹ŞÀº °ªÀ» º¯¼ö input¿¡ ÀúÀåÇÑ´Ù.
+			System.out.print("1ê³¼ 100ì‚¬ì´ì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” :");
+			input = s.nextInt(); // ì…ë ¥ë°›ì€ ê°’ì„ ë³€ìˆ˜ inputì— ì €ì¥í•œë‹¤.
 			
 			if(input > answer)
 				System.out.println("down");
 			else if(input < answer)
 				System.out.println("up");
 			else if(input==answer) {
-				System.out.println("Á¤´äÀÔ´Ï´Ù. ½ÃµµÇß´ø È½¼ö´Â "+count+ "ÀÔ´Ï´Ù.");
+				System.out.println("ì •ë‹µì…ë‹ˆë‹¤. ì‹œë„í–ˆë˜ íšŸìˆ˜ëŠ” "+count+ "ì…ë‹ˆë‹¤.");
 				break;
 			}
-		} while(true); // ¹«ÇÑ¹İº¹¹®
+		} while(true); // ë¬´í•œë°˜ë³µë¬¸
 	}
 }
 
@@ -207,17 +207,17 @@ class Exercise4_15{ // 4-15
 		int number = 12321;
 		int tmp = number;
 		
-		int result = 0; // º¯¼ö number¸¦ °Å²Ù·Î º¯È¯ÇØ¼­ ´ãÀ» º¯¼ö
+		int result = 0; // ë³€ìˆ˜ numberë¥¼ ê±°ê¾¸ë¡œ ë³€í™˜í•´ì„œ ë‹´ì„ ë³€ìˆ˜
 		
 		while(tmp!=0) {
-			result = result*10 + tmp%10; // ÇŞ°¥¸± ¼ö ÀÖ´Âµ¥ tmp%10À» ÇÏ¸é¼­ ³ª¿Â numberÀÇ ¸ÇµŞ¼ø¹ø ¼öµé
-			tmp /= 10; 					 // result¿¡¼­´Â ¾ÕÀÚ¸®·Î ´ç±â´Â °ÍÀÌ´Ù.
+			result = result*10 + tmp%10; // í–‡ê°ˆë¦´ ìˆ˜ ìˆëŠ”ë° tmp%10ì„ í•˜ë©´ì„œ ë‚˜ì˜¨ numberì˜ ë§¨ë’·ìˆœë²ˆ ìˆ˜ë“¤
+			tmp /= 10; 					 // resultì—ì„œëŠ” ì•ìë¦¬ë¡œ ë‹¹ê¸°ëŠ” ê²ƒì´ë‹¤.
 		}
 		
 		if(number==result)
-			System.out.println(number+"´Â È¸¹®¼ö ÀÔ´Ï´Ù.");
+			System.out.println(number+"ëŠ” íšŒë¬¸ìˆ˜ ì…ë‹ˆë‹¤.");
 		else
-			System.out.println(number+"´Â È¸¹®¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println(number+"ëŠ” íšŒë¬¸ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 	}
 }
 
